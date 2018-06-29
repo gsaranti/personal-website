@@ -57,7 +57,7 @@
 
 @media (max-height: 500px) {
   .hide-line {
-    visibility: hidden;
+    opacity: 0;
   }
 }
 
