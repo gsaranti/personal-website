@@ -5,11 +5,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
   </head>
 
   <body>
     <div id="sunset">
-        <line>
+      <div class="logo">
+        <i class="fas fa-laptop" color="white"></i>
+      </div>
+      <line class="hide-line animated slideInUp"></line>
+      <line class="hide-line animated slideInDown"></line>
+      <div class="title animated fadeIn">
+        <h1>GEORGE SARANTINOS</h1>
+        <p style="margin-top: 20px">COMPUTER SCIENTIST BASED IN LOS ANGELES</p>
+        <p>E m a i l :&nbsp &nbsp g e o r g e s a r a n t i n o s 1 8 @ g m a i l . c o m</p>
+        <p>(206)777-5470</p>
+      </div>
+      <div class="buttons">
+        <button type="button" class="btn btn-outline-light animated fadeInUp">GitHub</button>
+        <button style="margin-left:30px" type="button"
+        class="btn btn-outline-light animated fadeInUp">LinkedIn</button>
+        <button style="margin-left:30px" type="button"
+        class="btn btn-outline-light animated fadeInUp">About</button>
+        <button style="margin-left:30px" type="button"
+        class="btn btn-outline-light animated fadeInUp">Resume</button>
+      </div>
     </div>
   </body>
 

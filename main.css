@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC");
+
 #sunset {
   background-image: url("images/background.jpg");
   -moz-transform: scale(1.0);
@@ -16,17 +18,65 @@
   z-index: 1;
 }
 
+.fa-laptop{
+  color: white;
+  font-size: 2em;
+}
+
+.logo {
+  margin: auto;
+  position: relative;
+  top: 10%;
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  border: solid 1px #ffffff;
+  border-radius: 100%;
+  text-align: center;
+}
+
 .resume {
   margin-top: 15px;
 }
 
+.title {
+  top: 25%;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 15px;
+}
+
+.buttons {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  top: 30%;
+}
+
+@media (max-height: 500px) {
+  .hide-line {
+    visibility: hidden;
+  }
+}
+
 line {
     display: block;
+    margin: auto;
+    max-height: 40px;
+    overflow: hidden;
+    position: relative;
+    top: 40%;
     color: white;
     height: 1px;
-    width: 100px;
+    width: 600px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
     padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
 }
