@@ -55,6 +55,34 @@
   top: 30%;
 }
 
+.about {
+  background: #000;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  height: 35rem;
+  opacity: .9;
+  border-radius: 25px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.close {
+  color: #fff;
+  opacity: 1;
+  margin-right: 2%;
+  margin-top: 1%;
+  font-size: 250%;
+}
+
+.close:hover {
+  color: white;
+}
+
 @media (max-height: 500px) {
   .hide-line {
     opacity: 0;

@@ -4,10 +4,10 @@
     <title>Personal Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
   <body>
@@ -30,13 +30,23 @@
           <a href="https://www.linkedin.com/in/george-sarantinos-106857b5/"
           target="_blank" style="margin-left:30px"
           class="btn btn-outline-light animated fadeInUp">LinkedIn</a>
-          <button style="margin-left:30px" type="button"
+          <button style="margin-left:30px" type="button" onclick="aboutOpen();"
           class="btn btn-outline-light animated fadeInUp">About</button>
           <input style="margin-left:30px" class="btn btn-outline-light animated fadeInUp"
           type="submit" value="Resume">
         </form>
       </div>
     </div>
+    <div class="about">
+      <div>
+        <button type="button" class="close" aria-label="Close" onclick="aboutClose();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div>
+
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 
 </html>
