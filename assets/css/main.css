@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC");
 
 #sunset {
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   -moz-transform: scale(1.0);
   -webkit-transform: scale(1.0);
   -ms-transform: scale(1.0);
