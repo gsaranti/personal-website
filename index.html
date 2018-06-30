@@ -4,8 +4,8 @@
     <title>Personal Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
   </head>
@@ -24,13 +24,17 @@
         <p>(206)777-5470</p>
       </div>
       <div class="buttons">
-        <button type="button" class="btn btn-outline-light animated fadeInUp">GitHub</button>
-        <button style="margin-left:30px" type="button"
-        class="btn btn-outline-light animated fadeInUp">LinkedIn</button>
-        <button style="margin-left:30px" type="button"
-        class="btn btn-outline-light animated fadeInUp">About</button>
-        <button style="margin-left:30px" type="button"
-        class="btn btn-outline-light animated fadeInUp">Resume</button>
+        <form action="/resume" method="get">
+          <a href="https://github.com/gsaranti" target="_blank"
+          class="btn btn-outline-light animated fadeInUp">GitHub</a>
+          <a href="https://www.linkedin.com/in/george-sarantinos-106857b5/"
+          target="_blank" style="margin-left:30px"
+          class="btn btn-outline-light animated fadeInUp">LinkedIn</a>
+          <button style="margin-left:30px" type="button"
+          class="btn btn-outline-light animated fadeInUp">About</button>
+          <input style="margin-left:30px" class="btn btn-outline-light animated fadeInUp"
+          type="submit" value="Resume">
+        </form>
       </div>
     </div>
   </body>
