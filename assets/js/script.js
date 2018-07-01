@@ -1,7 +1,13 @@
 let aboutOpen = () => {
-  document.getElementsByClassName('about')[0].style.visibility = "visible";
+  let about = document.getElementsByClassName('about')[0];
+  about.classList.remove("fadeOut");
+  about.style.display = "block";
 }
 
 let aboutClose = () => {
-  document.getElementsByClassName('about')[0].style.visibility = "hidden";
+  let about = document.getElementsByClassName('about')[0];
+  about.classList.toggle("fadeOut");
+  setTimeout(function() {
+    about.style.display = "none";
+  }, 650);
 }

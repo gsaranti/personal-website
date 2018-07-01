@@ -1325,7 +1325,57 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDelay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInDelay {
+  -webkit-animation-name: fadeInDelay;
+  animation-name: fadeInDelay;
   -webkit-animation-delay: .5s;
+}
+
+@-webkit-keyframes fadeInAbout {
+  from {
+    background: rgba(0,0,0,0);
+  }
+
+  to {
+    background: rgba(0,0,0,0.9);
+  }
+}
+
+@keyframes fadeInAbout {
+  from {
+    background: rgba(0,0,0,0);
+  }
+
+  to {
+    background: rgba(0,0,0,0.9);
+  }
+}
+
+.fadeInAbout {
+  -webkit-animation-name: fadeInAbout;
+  animation-name: fadeInAbout;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -1615,6 +1665,31 @@
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+}
+
+@-webkit-keyframes slightFadeOut {
+  from {
+    background: rgba(0,0,0,1);
+  }
+
+  to {
+    background: rgba(0,0,0,1);
+  }
+}
+
+@keyframes slightFadeOut {
+  from {
+    background: rgba(0,0,0,1);
+  }
+
+  to {
+    background: rgba(0,0,0,1);
+  }
+}
+
+.slightFadeOut {
+  -webkit-animation-name: slightFadeOut;
+  animation-name: slightFadeOut;
 }
 
 @-webkit-keyframes fadeOutDown {
