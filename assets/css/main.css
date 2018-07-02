@@ -33,7 +33,7 @@
 .logo {
   margin: auto;
   position: relative;
-  top: 10%;
+  margin-top: 5%;
   width: 5.5rem;
   height: 5.5rem;
   line-height: 5.5rem;
@@ -47,7 +47,7 @@
 }
 
 .title {
-  top: 25%;
+  margin-top: 3%;
   position: relative;
   color: white;
   text-align: center;
@@ -59,7 +59,7 @@
   margin: auto;
   position: relative;
   text-align: center;
-  top: 30%;
+    margin-top: 3%;
 }
 
 .about {
@@ -139,25 +139,27 @@
   font-family: 'Oswald', sans-serif;
 }
 
-@media (max-height: 500px) {
+.top-line {
+  margin-top: 5%;
+}
+
+.bottom-line {
+  margin-top: 0%;
+}
+
+/* @media (max-height: 500px) {
   .hide-line {
     opacity: 0;
   }
-}
+} */
 
 line {
     display: block;
     margin: auto;
-    max-height: 40px;
     overflow: hidden;
     position: relative;
-    top: 40%;
-    color: white;
-    height: 1px;
     width: 600px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    padding: 0;
+    border-top: 1px solid #fff;
 }
 
 h1 {
