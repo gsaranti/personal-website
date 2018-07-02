@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
+#preload {
+  background-image: url("../images/background.jpg");
+}
+
 #sunset {
   background-image: url("../images/background.jpg");
   -moz-transform: scale(1.0);
