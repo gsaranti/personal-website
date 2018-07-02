@@ -12,4 +12,4 @@ app.get('/resume', function(req, res) {
   res.sendFile(path.join(__dirname+'/resume.html'));
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 3000);
