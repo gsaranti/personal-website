@@ -9,5 +9,5 @@ let aboutClose = () => {
   about.classList.toggle("fadeOut");
   setTimeout(function() {
     about.style.display = "none";
-  }, 650);
+  }, 800);
 }
