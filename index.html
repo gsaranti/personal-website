@@ -9,63 +9,81 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
   <body>
-    <div id="preload">
+    <div id="wrapper">
+      <div id="sunset"></div>
+        <div>
+          <div class="logo">
+            <i class="fas fa-laptop" color="white"></i>
+          </div>
+          <div class="top-line">
+            <line class="hide-line animated slideInUp"></line>
+          </div>
+          <div class="title animated fadeInDelay">
+            <h1>GEORGE SARANTINOS</h1>
+            <p style="margin-top: 20px">COMPUTER SCIENTIST BASED IN LOS ANGELES</p>
+            <p>E m a i l :&nbsp &nbsp g e o r g e s a r a n t i n o s 1 8 @ g m a i l . c o m</p>
+            <p>(206)777-5470</p>
+          </div>
+          <div class="bottom-line">
+            <line class="hide-line animated slideInDown"></line>
+          </div>
+          <div class="buttons">
+            <form action="/resume" method="get">
+              <a href="https://github.com/gsaranti" target="_blank"
+              class="btn btn-outline-light animated fadeInUp">GitHub</a>
+              <a href="https://www.linkedin.com/in/george-sarantinos-106857b5/"
+              target="_blank" style="margin-left:30px"
+              class="btn btn-outline-light animated fadeInUp">LinkedIn</a>
+              <button style="margin-left:30px" type="button" onclick="aboutOpen();"
+              class="btn btn-outline-light animated fadeInUp">About</button>
+              <input style="margin-left:30px" class="btn btn-outline-light animated fadeInUp"
+              type="submit" value="Resume">
+            </form>
+          </div>
+        </div>
+        <div class="about animated fadeInAbout">
+          <div>
+            <button type="button" class="close" aria-label="Close" onclick="aboutClose();">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div>
+            <img class="pic1 animated fadeIn" src="assets/images/IMG_5461.JPG" alt="Back from Mammoth">
+            <img class="pic2 animated fadeIn" src="assets/images/IMG_5715.JPG" alt="Classy">
+            <img class="pic3 animated fadeIn" src="assets/images/IMG_5032.JPG" alt="Ski">
+          </div>
+          <div class="description animated fadeIn">
+            <p>As a recent graduate from Loyola Marymount University, where I obtained a B.S.
+              in Computer Science, I am excited to build my career in the field of software devleopment!
+              I am always eager to take on new projects/challenges, work with new technologies, and
+              collaborate with driven people.  Tech isn't all that defines me!  You can find me jamming
+              on the guitar or piano, cheering on my Seattle sports teams, and/or getting a good run
+              in on the waterski or wakeboard.</p>
+          </div>
+        </div>
+      <div class="starWrapper">
+        <div class="stars"></div>
+        <div class="mountains"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+      </div>
     </div>
-    <div id="sunset">
-      <div class="logo">
-        <i class="fas fa-laptop" color="white"></i>
-      </div>
-      <div class="top-line">
-        <line class="hide-line animated slideInUp"></line>
-      </div>
-      <div class="title animated fadeInDelay">
-        <h1>GEORGE SARANTINOS</h1>
-        <p style="margin-top: 20px">COMPUTER SCIENTIST BASED IN LOS ANGELES</p>
-        <p>E m a i l :&nbsp &nbsp g e o r g e s a r a n t i n o s 1 8 @ g m a i l . c o m</p>
-        <p>(206)777-5470</p>
-      </div>
-      <div class="bottom-line">
-        <line class="hide-line animated slideInDown"></line>
-      </div>
-      <div class="buttons">
-        <form action="/resume" method="get">
-          <a href="https://github.com/gsaranti" target="_blank"
-          class="btn btn-outline-light animated fadeInUp">GitHub</a>
-          <a href="https://www.linkedin.com/in/george-sarantinos-106857b5/"
-          target="_blank" style="margin-left:30px"
-          class="btn btn-outline-light animated fadeInUp">LinkedIn</a>
-          <button style="margin-left:30px" type="button" onclick="aboutOpen();"
-          class="btn btn-outline-light animated fadeInUp">About</button>
-          <input style="margin-left:30px" class="btn btn-outline-light animated fadeInUp"
-          type="submit" value="Resume">
-        </form>
-      </div>
-    </div>
-    <div class="about animated fadeInAbout">
-      <div>
-        <button type="button" class="close" aria-label="Close" onclick="aboutClose();">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      <div>
-      <div class="george-pictures">
-        <img class="pic1 animated fadeIn" src="assets/images/IMG_5461.JPG" alt="Back from Mammoth">
-        <img class="pic2 animated fadeIn" src="assets/images/IMG_5715.JPG" alt="Classy">
-        <img class="pic3 animated fadeIn" src="assets/images/IMG_5032.JPG" alt="Ski">
-      </div>
-      <div class="description animated fadeIn">
-        <p>As a recent graduate from Loyola Marymount University, where I obtained a B.S.
-          in Computer Science, I am excited to build my career in the field of software devleopment!
-          I am always eager to take on new projects/challenges, work with new technologies, and
-          collaborate with driven people.  Tech isn't all that defines me!  You can find me jamming
-          on the guitar or piano, cheering on my Seattle sports teams, and/or getting a good run
-          in on the waterski or wakeboard.</p>
-      </div>
+    <!-- <div id="message">
+      <h2 class="messageTitleFont">Leave Me a Message</h2>
+      <form class="contact" v-on:submit.prevent="submitMessage">
+        <input class="userInput" type="text" placeholder="Name" v-model="user.name">
+        <input class="userInput" type="email" placeholder="email@email.com" v-model="user.email">
+        <input class="newMessage" type="message" placeholder="Leave your message here" v-model="user.message">
+        <input class="submit btn btn-outline-light" type="submit">
+      </form>
+    </div> -->
 
-    </div>
-
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="assets/js/script.js"></script>
+
   </body>
 
 </html>
